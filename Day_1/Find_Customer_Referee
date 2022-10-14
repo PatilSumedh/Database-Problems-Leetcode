@@ -1,0 +1,6 @@
+Problem : https://leetcode.com/problems/find-customer-referee/
+
+Solution :
+select name
+from Customer
+where id not in(select id from customer where referee_id = 2);
