@@ -1,6 +1,6 @@
-Problem : https://leetcode.com/problems/customers-who-never-order/
+--Problem : https://leetcode.com/problems/customers-who-never-order/
 
-Solution : 
+--Solution : 
 select Customers.name as Customers
 from Customers
 where Customers.id not in(select Orders.customerId from Orders);
