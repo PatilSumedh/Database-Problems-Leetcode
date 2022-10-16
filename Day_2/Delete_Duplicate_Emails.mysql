@@ -1,0 +1,7 @@
+--Problem : https://leetcode.com/problems/delete-duplicate-emails/
+
+--Solution :
+
+delete x
+from Person x, Person y
+where x.email = y.email and x.id > y.id;
